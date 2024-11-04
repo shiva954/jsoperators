@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question6</title>
+</head>
+
+<body>
+    <h3>
+        Question 6:
+
+        Write a program that simulates a shopping cart:
+
+        Ask the user to input the total amount.
+
+        Use a ternary operator to apply a 15% discount if the total is over $150; otherwise, apply no discount.
+
+        Use assignment operators to update the total amount after the discount and log the final price.
+
+
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+      let total = Number(prompt("enter the total amount :"));
+let eligble;
+total >= 150 ? eligble = true : eligble = false;
+total >= 150 ? console.log(`15 % discount applied`) : console.log(`the discount is not applied for total under 150$`);
+
+let newprice = (15 / 100) * total;
+eligble ? console.log(`the new total after discount is ${total - newprice}`) : eligble = false;
+
+
+    </script>
+</body>
+
+</html>

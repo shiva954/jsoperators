@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question8</title>
+</head>
+
+<body>
+    <h3>
+        Question 8:
+
+        Write a program that accepts two numbers from the user. The program should:
+
+        Perform a bitwise &, |, and ^ operation on the numbers and display the results.
+
+        Shift the bits of the first number two places to the left and display the result.
+
+        Compare the original and shifted number using comparison operators and log the results.
+
+
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let a = Number(prompt("enter the first number:"));
+        let b = Number(prompt("enter the second number:"));
+
+        console.log(`the out put for a&b is ${a & b}`);
+        console.log(`the output for a|b is ${a | b}`);
+        console.log(`the output for a^b is ${a ^ b}`);
+
+        let leftShift = a << 2;
+
+        console.log(`the number before shift ${a} is ${leftShift} after the leftshift `);
+
+
+    </script>
+</body>
+
+</html>

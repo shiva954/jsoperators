@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question4</title>
+</head>
+
+<body>
+    <h3>
+        Question 4:
+
+        Write a program that takes three numbers from the user. The program should:
+
+        Add the first two numbers and display the result.
+
+        Compare the sum of the first two numbers with the third number using comparison operators.
+
+        Use a logical operator (&&) to check if the sum of the first two numbers is greater than 50 and the third number
+        is less than 100, and log the result.
+
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let a = Number(prompt("enter the first number :"));
+        let b = Number(prompt("enter the second number :"));
+        let c = Number(prompt("enter the third number :"));
+
+        let sum = a + b;
+        console.log(`the sum of first two number is ${sum}`);
+        sum > c ? console.log(`the sum of first 2 number is greater than the third`) : console.log(`the sum of first 2 numbers is less than the third`);
+        (sum > 50 && c < 100) ? console.log(`the sum of first 2 numbers is greater than 50 and the third number is less than 100`) : console.log(`the sum of first 2 numbers is either less than 50 or the third number is less than 100`);
+
+    </script>
+</body>
+
+</html>

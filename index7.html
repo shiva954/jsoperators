@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question7</title>
+</head>
+
+<body>
+    <h3>
+        Question 7:
+
+        Create a program that accepts a sentence from the user and:
+
+        Use string operators to reverse the sentence.
+
+        Check if the reversed sentence is longer than 15 characters using a comparison operator.
+
+        Use a logical operator (||) to log a message if either the original or reversed sentence has more than 20
+        characters.
+
+
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let string = prompt("enter the string to reverse:");
+        let reverse = "";
+        for (let i = string.length - 1; i >= 0; i--) {
+            reverse += string.charAt(i);
+        }
+        console.log(`the reverse string is ' ${reverse} '`);
+        (reverse.length > 15) ? console.log(`the  reverse of the string length is greater than 15 `) : console.log(`the  reverse of the string length is  not greater than 15 `);
+        (reverse.length > 20 || string.length > 20) ? console.log(`one of the string length is more than 20`) : console.log(`both the string lengths are less than 20 `);
+
+    </script>
+</body>
+
+</html>

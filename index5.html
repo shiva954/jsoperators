@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question5</title>
+</head>
+
+<body>
+    <h3>
+        Question 5:
+
+        Create a program where the user inputs two strings (e.g., a first name and a last name) and a number. The
+        program should:
+
+        Concatenate the strings and display the full name.
+
+        Use the typeof operator to check if the number is of type number and display the result.
+
+        Use assignment operators to increment the number by 10 and log the new value.
+
+
+
+    </h3>
+
+    <h3>open console for output</h3>
+    <script>
+        let fn = prompt("enter your first name:");
+        let ln = prompt("enter your last name:");
+        let n = prompt("enter a number :");
+
+        console.log(`your full name is ${fn} ${ln}`);
+
+        (typeof n == 'number') ? console.log(`the enter number is a type of number`) : console.log(`the entered number is not a type of number`);
+
+        n += 10;
+        console.log(`the value of n after the increment of 10 is ${n}`);
+
+
+    </script>
+</body>
+
+</html>
